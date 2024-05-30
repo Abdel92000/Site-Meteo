@@ -1,0 +1,575 @@
+body {
+    background-color: white;
+
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom, #555555, #333333);
+    /* Dégradé du gris clair au gris foncé */
+    background-size: cover;
+}
+
+
+h1 {
+    flex-wrap: nowrap;
+    color: white;
+}
+
+.title {
+
+    font-size: 2em;
+    color: beige;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+
+
+
+
+}
+
+nav a {
+    text-decoration: none;
+    color: aliceblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: auto 4px;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+form {
+
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+.label {
+    font-family: 'Raleway';
+    font-size: 20px;
+    margin: auto;
+}
+
+
+.barre-de-recherche {
+
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+input {
+
+    width: 100%;
+    /* Prendre toute la largeur disponible */
+    padding: 10px;
+    border: 2px solid #444;
+    /* Bordure légèrement visible */
+    border-radius: 15px;
+    /* Bordure arrondie */
+    background-color: #2a2d3b;
+    /* Couleur de fond */
+    color: #ccc;
+    /* Couleur du texte */
+    font-size: 16px;
+    /* Taille de la police */
+    outline: none;
+    /* Retirer le contour par défaut */
+    transition: border-color 0.3s ease;
+    /* Animation pour le focus */
+}
+
+/*
+input {
+
+    background-color: #2a2d3b;
+    border-radius: 10Px;
+    padding: 7px;
+    height: 30px;
+    width: 100%;
+}
+*/
+.temperature {}
+
+
+
+.container-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: 'Raleway';
+    font-size: 2em;
+    color: rgb(189 189 189);
+    margin-top: 100px;
+    background-color: #2a2d3b;
+    border-radius: 20px;
+    padding: 10px;
+
+
+}
+
+.Ville-rechercher {
+    color: white;
+    font-size: 3em;
+    font-family: 'Raleway';
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.box-temperature {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: space-between;
+    color: white;
+    font-size: 3em;
+    margin-top: 50px;
+}
+
+.box-temperature img {
+
+    object-fit: none
+}
+
+
+
+
+
+.box-vent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+
+
+}
+
+
+.box-vent img {
+    height: 50px;
+    width: 60px;
+    object-fit: contain
+}
+
+
+.box-sunset {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+
+
+}
+
+
+.box-sunset img {
+    height: 50px;
+    width: 60px;
+    object-fit: contain;
+}
+
+button {
+
+    border: 2px solid rgb(12, 47, 144);
+    border-radius: 10PX;
+    padding: 8px;
+    font-family: 'Raleway';
+    margin-bottom: 10px;
+}
+
+button img {
+    width: 23px;
+    height: 20Px;
+    object-fit: contain;
+}
+
+
+button:hover {
+    background-color: #007bff;
+    /* Green */
+    color: white;
+    transition-duration: 0.4s;
+}
+
+
+.Meteo-infos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    margin-top: 0PX;
+    margin-bottom: 10px;
+    height: 700px;
+    margin-left: 100px;
+    margin-right: 100Px;
+    border-radius: 20px;
+    background-color: #1e2029;
+
+
+}
+
+
+
+
+.Affichage2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+
+.Avenir {
+
+    color: rgb(189 189 189);
+    width: 600px;
+
+    background-color: #2a2d3b;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+
+.scdAffichage {
+    height: 400px;
+    width: 210px;
+    background-color: #2a2d3b;
+
+    border-radius: 20px;
+    padding: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+}
+
+
+.info-autre {
+    display: flex;
+    flex-direction: row;
+
+    flex-wrap: wrap;
+    width: 250px;
+
+    gap: 6px;
+
+
+}
+
+.info-autre-card {
+    flex: 1 1 calc(50% - 6px);
+
+    border-radius: 20px;
+    height: 180px;
+    background-color: #2a2d3b;
+    box-sizing: border-box;
+    padding: 10px;
+
+    color: rgb(189 189 189);
+
+
+}
+
+
+footer {
+
+    height: 150Px;
+
+
+}
+
+.box-presentation {
+    font-family: 'Raleway';
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.box-presentation img {
+    object-fit: cover;
+    height: 50px;
+    width: 50px;
+
+}
+
+
+
+
+
+.box-Grandes-Villes {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Raleway';
+    color: white;
+    justify-content: space-between;
+
+}
+
+
+.box-Paris {
+    border: solid 1px gray;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-image: url("images-lyon.jpeg");
+    background-size: cover;
+    background-position: initial;
+    background-repeat: no-repeat;
+
+}
+
+.box-Lyon {
+    border: solid 1px gray;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-image: url("images-lyon.jpeg");
+    background-size: cover;
+    background-position: initial;
+    background-repeat: no-repeat;
+
+}
+
+.box-Marseille {
+    border: solid 1px gray;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-image: url("images-lyon.jpeg");
+    background-size: cover;
+    background-position: initial;
+    background-repeat: no-repeat;
+}
+
+.box-Rouen {
+    border: solid 1px gray;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-image: url("images-lyon.jpeg");
+    background-size: cover;
+    background-position: initial;
+    background-repeat: no-repeat;
+}
+
+
+
+.icone-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.icone-footer img {
+    margin-left: 20px;
+}
+
+
+.error {
+    border: solid red;
+}
+
+
+@media (max-width: 768px) {
+
+    body {
+        background: linear-gradient(to bottom, #555555, #333333);
+        background-size: cover;
+    }
+
+    .title {
+        font-size: 1.5em;
+
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .barre-de-recherche {
+        width: 100%;
+        padding: 10px;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+
+    input {
+        width: 100%;
+        padding: 8px;
+        box-sizing: border-box;
+        /* Inclut le padding dans la largeur totale */
+        margin-bottom: 10px;
+        /* Espace entre l'input et le bouton */
+        border-radius: 4px;
+        /* Optionnel : ajoute des coins arrondis */
+        border: 1px solid #ccc;
+        /* Optionnel : ajoute une bordure */
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        border-radius: 4px;
+        /* Optionnel : ajoute des coins arrondis */
+        border: none;
+        /* Optionnel : enlève la bordure par défaut */
+        background-color: #007BFF;
+        /* Couleur de fond du bouton */
+        color: white;
+        /* Couleur du texte */
+        cursor: pointer;
+        /* Change le curseur au survol */
+    }
+
+    .Meteo-infos {
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+        padding: 10px;
+        width: 100%
+    }
+
+    .container-info {
+        margin-top: 20px;
+        padding: 10px;
+
+    }
+
+    .Ville-rechercher {
+        font-size: 1.5em;
+        text-align: center;
+
+    }
+
+    .box-temperature {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        width: 100%;
+
+    }
+
+    .box-temperature img {
+        width: 40px;
+        height: 40px;
+        margin-top: 10px;
+        object-fit: contain;
+    }
+
+    .box-vent,
+    .box-sunset {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+        width: 100%;
+
+
+    }
+
+    .box-vent img,
+    .box-sunset img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .Affichage2 {
+        width: 100%;
+        padding: 10px;
+        align-items: center;
+    }
+
+    .scdAffichage {
+        width: 100%;
+        margin-top: 20px;
+        padding: 10px;
+        display: none;
+    }
+
+    .info-autre {
+        width: 100%;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .info-autre-card {
+        flex: 1 1 calc(50% - 10px);
+        height: auto;
+        padding: 10px;
+        margin-bottom: 10px;
+
+    }
+
+    .info-autre-card h1 {
+        font-size: 1em;
+    }
+
+    .info-autre-card p {
+        font-size: 0.9em;
+    }
+
+    .box-Grandes-Villes {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .box-Paris,
+    .box-Lyon,
+    .box-Marseille,
+    .box-Rouen {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    footer {
+        height: auto;
+        padding: 20px;
+    }
+
+    .box-presentation {
+        text-align: center;
+
+    }
+
+    .icone-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icone-footer img {
+        margin: 10px 0;
+        width: 30px;
+        height: 30px;
+    }
+}

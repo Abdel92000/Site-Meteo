@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="meteo.js" defer></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- En tete de la page -->
+
+    <header>
+
+        <nav>
+            <div class="title"> </div>
+
+        </nav>
+
+
+
+    </header>
+
+
+    <main class="Meteo-infos">
+
+
+        <!--Afiichage de la meteo-->
+        <section class="barre-de-recherche">
+
+            <form action="" id="ville-form">
+
+                <div class="label">
+
+                </div><br>
+                <input type="texte" name="ville" id="ville" placeholder="Entrez une ville">
+
+
+                <button type="submit" id="btn-valider"> <img src="loupe.png" alt="loupe">
+                </button>
+
+
+
+
+            </form>
+
+
+            <section class="Ville">
+
+                <p class="Ville-rechercher"> </p>
+
+
+            </section>
+
+            <section class="Affichage-Ville-temp-icone">
+
+
+                <div class="box-temperature">
+                    <div class="temperature">
+                    </div>
+
+                    <img src="soleil.png" alt="">
+
+
+                </div>
+
+            </section>
+
+
+
+            <section class="Affichage" id="1">
+
+
+
+
+                <div class="container-info">
+
+
+                    <div class="box-vent">
+                        <div class="vent"> </div>
+                        <img src="vent (1).png" alt="">
+
+                    </div>
+
+                    <div class="box-sunset">
+                        <div class="sunset"> </div>
+                        <img src="coucher-de-soleil.png" alt="">
+                    </div>
+
+                    <div class="timezone"> </div>
+                </div>
+
+
+
+
+
+            </section>
+
+
+        </section>
+
+
+        <section class="Affichage2">
+
+
+            <section class="info-autre">
+
+                <div class="info-autre-card " id="Humidité">
+
+                    <h1>Humidité</h1>
+                    <p id="Humidité-text"> </p>
+
+                </div>
+
+                <div class="info-autre-card " id="Visibilité">
+
+                    <h1>Visibilité</h1>
+                    <p id="Visibilité-text"> </p>
+
+                </div>
+
+                <div class="info-autre-card " id="leverSoleil">
+
+                    <h1>Lever du soleil</h1>
+                    <p id="leverSoleil-text"> </p>
+
+                </div>
+
+
+
+
+            </section>
+
+
+            <!--Afiichage complement de la meteo-->
+            <section class="scdAffichage" id="2">
+
+                <div class="box-Grandes-Villes">
+
+                    <button class="box-Paris" id="button-fav"> Paris </button>
+                    <button class="box-Lyon " id="button-fav">Lyon </button>
+                    <button class="box-Marseille" id="button-fav">Marseille </button>
+                    <button class="box-Rouen" id="button-fav">Rouen </button>
+
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+
+
+
+
+
+    <footer>
+        <div class="box-presentation">
+
+
+            <P>Réalisé par Rahal Abdelghani </P>
+
+            <div class="icone-footer">
+                <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
+                    target="_blank">
+                    <img src="linkedin.png" alt="">
+
+                </a>
+
+                <a href="https://github.com/Abdel92000" target="_blank">
+                    <img src="github.png" alt="">
+
+
+
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
